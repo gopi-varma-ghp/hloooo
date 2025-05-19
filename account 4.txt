@@ -1,0 +1,77 @@
+package com.bank.accountss;
+
+public class Library {
+	private String libraryname;
+	private int totalbooks;
+	public void setlibraryname( String libraryname) {
+		this.libraryname=libraryname;
+	}
+	public  void totalbooks( int totalbooks) {
+		this.totalbooks=totalbooks;
+	}
+	public String  getlibraryname(){
+		return libraryname;
+	}
+	public int  gettotalbooks(){
+		return totalbooks;
+	}
+	public void showLibraryDetails() {
+		System.out.println(" libraryname:"+libraryname); 
+		System.out.println(" totalbooks:"+totalbooks);
+		
+		
+		
+	}
+
+}
+package com.bank.accountss;
+
+public class Librarian {
+	private String libraryname;
+	private int yearsofexperience; 
+	public void setlibraryname( String libraryname) {
+		this.libraryname=libraryname;
+	}
+	public int  setyearsofexperience(int yearsofexperience) {
+		this.yearofexperience =yearofexperience;
+	}
+	public String getlibraryname() {
+		return libraryname;
+	}
+		public int  getyearofexxperience() {
+			return yearofexperience;
+		}
+		public void showLibrarianInfo() {
+			System.out.println(" libraryname:"+ libraryname);
+			System.out.println("yearofexperience:"+yearofexperience);
+	
+			
+		}
+	
+	}
+package com.bank.accountss;
+import com.library.books.Library;
+import com.library.staff.Librarian;
+public class Contains {
+	public static void main(String[] args) {
+	Library a2=new Library();
+	a2.setlibraryname("mrce");
+	a2.settotalbooks("300");
+	Librarian f2 =new Librarian();
+	f2.setlibrarianname("gopi");
+	f2.setyearsOfExperience("3");
+	System.out.println();
+	a2. showLibraryDetails();
+	f2. showLibrarianInfo();
+	
+	
+	
+		
+	}
+	
+
+}
+
+
+
+
